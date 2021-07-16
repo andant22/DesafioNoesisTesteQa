@@ -1,0 +1,20 @@
+#language: pt
+Funcionalidade: Pesquisar médicos no site da Unimed
+
+  @Desafio1
+    Cenario: Buscar médicos especialista em "cardiologia" no estado do "Rio de janeiro" e cidade do "Rio de Janeiro"
+    Dado preciso entrar no site da Unimede 
+    Quando clico no botão consulta agora
+    E clico em busca detalhada
+    E escrevo a especialidade "cardiologia"
+    E escrevo o estado Rio de Janeiro
+    E escrevo a ciade Rio de Janeiro
+    E clico em Pesquisar
+    Entao eu tenho todos os medicos da especialidade Angiologia do Rio de Janeiro
+
+  @Desafio2
+    Cenario: Pesquisar médicos no Rio de Janeiro e não pode apresentar resultados na cidade de São Paulo
+    Dado que estou no site da Unimed e consulte o Guia Médico
+    Quando eu escrevo a cidade Rio de Janeiro
+    E clico em Pesquisar
+    Entao não terei resultados dos médicos que contenha a cidade São Paulo

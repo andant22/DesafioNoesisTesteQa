@@ -1,0 +1,72 @@
+package test;
+
+public class BuscarMedico {
+	
+	
+	@Dado("preciso entrar no site da Unimede")
+	public void preciso_entrar_no_site_da_unimede() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("clico no bot?o consulta agora")
+	public void clico_no_bot_o_consulta_agora() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("clico em busca detalhada")
+	public void clico_em_busca_detalhada() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("escrevo a especialidade {string}")
+	public void escrevo_a_especialidade(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("escrevo o estado Rio de Janeiro")
+	public void escrevo_o_estado_rio_de_janeiro() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("escrevo a ciade Rio de Janeiro")
+	public void escrevo_a_ciade_rio_de_janeiro() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("clico em Pesquisar")
+	public void clico_em_pesquisar() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Entao("eu tenho todos os medicos da especialidade Angiologia do Rio de Janeiro")
+	public void eu_tenho_todos_os_medicos_da_especialidade_angiologia_do_rio_de_janeiro() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Dado("que estou no site da Unimed e consulte o Guia M?dico")
+	public void que_estou_no_site_da_unimed_e_consulte_o_guia_m_dico() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Quando("eu escrevo a cidade Rio de Janeiro")
+	public void eu_escrevo_a_cidade_rio_de_janeiro() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Entao("n?o terei resultados dos m?dicos que contenha a cidade S?o Paulo")
+	public void n_o_terei_resultados_dos_m_dicos_que_contenha_a_cidade_s_o_paulo() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

@@ -1,0 +1,90 @@
+package test;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Entao;
+import io.cucumber.java.pt.Quando;
+
+public class BuscarMedico {
+	
+	//Atributos
+	String url; //Endereço do site 
+	WebDriver driver; // Objeto do selenium	
+		
+	@Before //Antes do teste
+	public void iniciar() {
+		url = "https://www.unimed.coop.br"; //Endereço do site
+		System.setProperty("webdriver.chrome.driver","C:\\Noesis\\DesafioUnimed\\desafiounimed\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize(); //Maximinizar a janela do navegador
+		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS); //Esperar implicita de 30s
+	}
+	
+	@After //Depois do Teste
+	public void finalizar() {
+		driver.quit();		
+	}
+		
+	@Dado("preciso entrar no site da Unimede")
+	public void preciso_entrar_no_site_da_unimede() {
+	   driver.get(url);
+	}
+
+	@Quando("clico no bot?o consulta agora")
+	public void clico_no_bot_o_consulta_agora() {
+		driver.findElement(By.id("fragment-oimm-link")).click();
+	}
+
+	@Quando("clico em busca detalhada")
+	public void clico_em_busca_detalhada() {
+	   driver.findElement(By.id("react-tabs-2")).click();
+	}
+
+	@Quando("escrevo a especialidade {string}")
+	public void escrevo_a_especialidade(String string) {
+	   
+	}
+
+	@Quando("escrevo o estado Rio de Janeiro")
+	public void escrevo_o_estado_rio_de_janeiro() {
+	    
+	}
+
+	@Quando("escrevo a ciade Rio de Janeiro")
+	public void escrevo_a_ciade_rio_de_janeiro() {
+	  
+	}
+
+	@Quando("clico em Pesquisar")
+	public void clico_em_pesquisar() {
+	    
+	}
+
+	@Entao("eu tenho todos os medicos da especialidade Angiologia do Rio de Janeiro")
+	public void eu_tenho_todos_os_medicos_da_especialidade_angiologia_do_rio_de_janeiro() {
+	    
+	}
+
+	@Dado("que estou no site da Unimed e consulte o Guia M?dico")
+	public void que_estou_no_site_da_unimed_e_consulte_o_guia_m_dico() {
+	    
+	}
+
+	@Quando("eu escrevo a cidade Rio de Janeiro")
+	public void eu_escrevo_a_cidade_rio_de_janeiro() {
+	    
+	}
+
+	@Entao("n?o terei resultados dos m?dicos que contenha a cidade S?o Paulo")
+	public void n_o_terei_resultados_dos_m_dicos_que_contenha_a_cidade_s_o_paulo() {
+	    
+	}
+
+}
